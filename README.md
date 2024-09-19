@@ -1,0 +1,2 @@
+- sta304 week 3
+- tests, models, simulations about the data of marriage
