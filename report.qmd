@@ -1,0 +1,20 @@
+---
+title: "report"
+format: pdf
+---
+## Introduction
+This report presents an analysis of marriage license statistics in Toronto.
+
+## Graph of Simulated Data
+```{r}
+library(ggplot2)
+
+# Load simulated data
+simulated_data <- read.csv("simulated_marriage_data.csv")
+
+ggplot(simulated_data, aes(x = Date, y = Count)) +
+  geom_line() +
+  labs(title = "Marriage Licenses Issued Over Time",
+       x = "Date",
+       y = "Number of Licenses Issued")
+```
